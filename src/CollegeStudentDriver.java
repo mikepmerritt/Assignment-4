@@ -15,11 +15,19 @@ public class CollegeStudentDriver {
 		
 		CollegeStudent user = new CollegeStudent(name, age, college);
 		
-		CollegeStudent jim = new CollegeStudent("Jim", 20, "Quinnipiac");
-		CollegeStudent steve = new CollegeStudent("Steve", 19, "Quinnipiac");
-		CollegeStudent brian = new CollegeStudent("Brian", 21, "Quinnipiac");
+		CollegeStudent jim = new CollegeStudent("Jim", 20, college);
+		CollegeStudent steve = new CollegeStudent("Steve", 19, college);
+		CollegeStudent brian = new CollegeStudent("Brian", 21, college);
 		
 		Lecture math = new Lecture("Calculus I", 75);
+		Lecture chem = new Lecture("Chemistry", 75);
+		Lecture bio = new Lecture("Biology", 50);
+		
+		System.out.println("-------------------------------------------");
+		
+		System.out.println("Welcome to " + college + ", " + name + "!");
+		System.out.println("Your fellow students are " + jim.getName() + ", " + steve.getName() + ", and " + brian.getName() + ".");
+		System.out.println("You are taking " + math.getName() + " and " + chem.getName() + ".");
 		
 		System.out.println("-------------------------------------------");
 		
@@ -27,10 +35,10 @@ public class CollegeStudentDriver {
 			System.out.println("Day " + i);
 			user.goToLecture(math);
 			jim.goToLecture(math);
-			steve.goToLecture(math);
+			steve.goToLecture(bio);
 			user.eatLunch();
-			user.goToLecture();
-			brian.goToLecture();
+			user.goToLecture(chem);
+			brian.goToLecture(chem);
 			if (i % 2 == 0) {
 				user.doGroupAssignment(brian);
 			}
