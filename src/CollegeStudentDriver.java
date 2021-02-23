@@ -25,9 +25,9 @@ public class CollegeStudentDriver {
 		
 		for(int i = 1; i <= 4; i++) {
 			System.out.println("Day " + i);
-			user.goToLecture();
-			jim.goToLecture();
-			steve.goToLecture();
+			user.goToLecture(math);
+			jim.goToLecture(math);
+			steve.goToLecture(math);
 			user.eatLunch();
 			user.goToLecture();
 			brian.goToLecture();
