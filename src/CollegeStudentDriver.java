@@ -15,14 +15,20 @@ public class CollegeStudentDriver {
 		
 		CollegeStudent user = new CollegeStudent(name, age, college);
 		
+		CollegeStudent jim = new CollegeStudent("Jim", 20, "Quinnipiac");
+		CollegeStudent steve = new CollegeStudent("Steve", 19, "Quinnipiac");
+		CollegeStudent brian = new CollegeStudent("Brian", 21, "Quinnipiac");
+		
 		System.out.println("-------------------------------------------");
 		
 		for(int i = 1; i <= 4; i++) {
 			System.out.println("Day " + i);
 			user.goToLecture();
-			user.goToLecture();
+			jim.goToLecture();
+			steve.goToLecture();
 			user.eatLunch();
 			user.goToLecture();
+			brian.goToLecture();
 			user.doAssignment();
 			System.out.println("-------------------------------------------");
 		}
