@@ -14,20 +14,17 @@ public class CollegeStudentDriver {
 		String college = scan.nextLine();
 		
 		CollegeStudent user = new CollegeStudent(name, age, college);
-		user.goToLecture();
 		
-//		CollegeStudent michael = new CollegeStudent("Michael", 19, "Quinnipiac");
-//		System.out.println(michael);
-//		System.out.println("-------------------------------------------");
-//		
-//		for(int i = 1; i <= 4; i++) {
-//			System.out.println("Day " + i);
-//			michael.goToLecture();
-//			michael.goToLecture();
-//			michael.eatLunch();
-//			michael.goToLecture();
-//			michael.doAssignment();
-//			System.out.println("-------------------------------------------");
-//		}
+		System.out.println("-------------------------------------------");
+		
+		for(int i = 1; i <= 4; i++) {
+			System.out.println("Day " + i);
+			user.goToLecture();
+			user.goToLecture();
+			user.eatLunch();
+			user.goToLecture();
+			user.doAssignment();
+			System.out.println("-------------------------------------------");
+		}
 	}
 }
