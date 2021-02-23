@@ -33,6 +33,10 @@ public class CollegeStudent {
 		}
 	}
 	
+	public void goToLecture(Lecture lecture) {
+		System.out.println(name + " went to a " + lecture.getLength() + " minute " + lecture.getName() + " lecture at " + college + ".");
+	}
+	
 	public void eatLunch() {
 		System.out.println(name + " ate lunch for 60 minutes.");
 	}
