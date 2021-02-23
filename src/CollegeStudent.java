@@ -24,6 +24,11 @@ public class CollegeStudent {
 		}
 	}
 	
+	public void doGroupAssignment(CollegeStudent partner) {
+		int timeSpent = (int) (Math.random()*60+15);
+		System.out.println(name + " worked with " + partner.getName() + " on a group project for " + timeSpent + " minutes.");
+	}
+	
 	public void goToLecture() {
 		if(Math.random()*2 > 1) {
 			System.out.println(name + " went to a 50 minute lecture at " + college + ".");
@@ -39,6 +44,10 @@ public class CollegeStudent {
 	
 	public void eatLunch() {
 		System.out.println(name + " ate lunch for 60 minutes.");
+	}
+	
+	public String getName() {
+		return name;
 	}
 	
 	public String toString() {

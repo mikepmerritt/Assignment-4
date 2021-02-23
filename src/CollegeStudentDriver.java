@@ -31,7 +31,12 @@ public class CollegeStudentDriver {
 			user.eatLunch();
 			user.goToLecture();
 			brian.goToLecture();
-			user.doAssignment();
+			if (i % 2 == 0) {
+				user.doGroupAssignment(brian);
+			}
+			else {
+				jim.doGroupAssignment(steve);
+			}
 			System.out.println("-------------------------------------------");
 		}
 	}
